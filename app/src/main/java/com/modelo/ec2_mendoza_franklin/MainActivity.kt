@@ -31,14 +31,14 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Ec2mendozafranklinTheme {
-                // Configurar NavController para la navegación
+
                 val navController = rememberNavController()
 
-                // Definir NavHost con las rutas y destinos
+
                 NavHost(navController = navController, startDestination = "main_screen") {
                     composable("main_screen") { MainScreen(navController) }
                     composable("formulario_screen") { FormularioScreen(navController) }
-                    //composable("listado_screen") { ListadoScreen(navController) }
+                    composable("listado_screen") { ListadoScreen(navController) }
                 }
             }
         }

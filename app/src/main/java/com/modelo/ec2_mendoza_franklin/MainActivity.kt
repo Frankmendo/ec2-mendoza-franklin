@@ -38,7 +38,7 @@ class MainActivity : ComponentActivity() {
                 NavHost(navController = navController, startDestination = "main_screen") {
                     composable("main_screen") { MainScreen(navController) }
                     composable("formulario_screen") { FormularioScreen(navController) }
-                    composable("listado_screen") { ListadoScreen(navController) }
+                    //composable("listado_screen") { ListadoScreen(navController) }
                 }
             }
         }
